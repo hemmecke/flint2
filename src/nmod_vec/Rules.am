@@ -1,0 +1,9 @@
+libflint_la_SOURCES += \
+  src/nmod_vec/add.c \
+  src/nmod_vec/max_bits.c \
+  src/nmod_vec/neg.c \
+  src/nmod_vec/randtest.c \
+  src/nmod_vec/reduce.c \
+  src/nmod_vec/scalar_addmul_nmod.c \
+  src/nmod_vec/scalar_mul_nmod.c \
+  src/nmod_vec/sub.c

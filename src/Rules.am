@@ -1,0 +1,15 @@
+# Include the subdirectories of the modules
+include src/ulong_extras
+include src/long_extras
+include src/fmpz
+include src/fmpz_vec
+include src/fmpz_poly
+include src/fmpq_poly
+include src/fmpz_mat
+include src/mpfr_vec
+include src/mpfr_mat
+include src/nmod_vec
+include src/nmod_poly
+include src/arith
+include src/mpn_extras
+include src/nmod_mat

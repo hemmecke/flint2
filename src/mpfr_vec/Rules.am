@@ -1,0 +1,9 @@
+libflint_la_SOURCES += \
+  src/mpfr_vec/add.c \
+  src/mpfr_vec/clear.c \
+  src/mpfr_vec/init.c \
+  src/mpfr_vec/scalar_mul_2exp.c \
+  src/mpfr_vec/scalar_mul_mpfr.c \
+  src/mpfr_vec/scalar_product.c \
+  src/mpfr_vec/set.c \
+  src/mpfr_vec/zero.c

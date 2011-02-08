@@ -1,0 +1,4 @@
+libflint_la_SOURCES += \
+  src/mpfr_mat/clear.c \
+  src/mpfr_mat/init.c
+

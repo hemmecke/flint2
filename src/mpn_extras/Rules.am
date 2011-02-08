@@ -1,0 +1,6 @@
+libflint_la_SOURCES += \
+  src/mpn_extras/debug.c \
+  src/mpn_extras/factor_trial.c \
+  src/mpn_extras/harmonic.c \
+  src/mpn_extras/remove_2exp.c \
+  src/mpn_extras/remove_power.c

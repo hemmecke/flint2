@@ -1,0 +1,2 @@
+libflint_la_SOURCES += \
+  src/long_extras/randtest.c

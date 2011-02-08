@@ -1,0 +1,18 @@
+libflint_la_SOURCES += \
+  src/arith/bernoulli_poly.c \
+  src/arith/bernoulli_vec.c \
+  src/arith/bernoulli_vec_recursive.c \
+  src/arith/bernoulli_vec_series.c \
+  src/arith/divisors.c \
+  src/arith/divisor_sigma.c \
+  src/arith/euler_phi.c \
+  src/arith/factor.c \
+  src/arith/factor_utils.c \
+  src/arith/harmonic.c \
+  src/arith/moebius_mu.c \
+  src/arith/primorial.c \
+  src/arith/ramanujan_tau.c \
+  src/arith/stirling1.c \
+  src/arith/stirling2.c \
+  src/arith/stirlingmat.c \
+  src/arith/unfactor.c
