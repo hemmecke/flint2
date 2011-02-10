@@ -94,6 +94,7 @@ AC_SUBST(mpir_cflags)
 # First test whether --with-mpfr was given on the command line.
 # Only if --with-mpfr was not given, we check for existance in
 # a standard place.
+flint_save_CFLAGS=$CFLAGS
 AC_ARG_WITH([mpfr],
   [AS_HELP_STRING(
     [--with-mpfr],
@@ -110,13 +111,15 @@ AC_ARG_WITH([mpfr],
   AC_CHECK_LIB(mpfr, mpfr_add, , [AC_MSG_ERROR(
     [Need MPFR either from GNU MP 4 or separate MPFR package.
      See http://www.mpfr.org or http://swox.com/gmp])])
-  CFLAGS=$flint_save_CFLAGS
-  ],
+  ],[
   # Action if --with-mpir is not given.
+  CFLAGS="$mpir_cflags"
   AC_CHECK_LIB(mpfr, mpfr_add, , [AC_MSG_ERROR(
     [Need MPFR either from GNU MP 4 or separate MPFR package.
      See http://www.mpfr.org or http://swox.com/gmp])])
+  ]
 )
+CFLAGS=$flint_save_CFLAGS
 AC_SUBST(mpfr_cflags)
 
 ###################################################################
