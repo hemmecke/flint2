@@ -1,3 +1,4 @@
+include src/fmpz_poly/test/Rules.am
 libflint_la_SOURCES += \
   src/fmpz_poly/2norm.c \
   src/fmpz_poly/add.c \

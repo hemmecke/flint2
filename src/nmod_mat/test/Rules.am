@@ -1,0 +1,13 @@
+TESTSUITE_TESTS += ${nmod_mat_TESTS}
+nmod_mat_TESTS = \
+  src/nmod_mat/test/t-add \
+  src/nmod_mat/test/t-det \
+  src/nmod_mat/test/t-init_clear \
+  src/nmod_mat/test/t-inv \
+  src/nmod_mat/test/t-mul \
+  src/nmod_mat/test/t-mul_strassen \
+  src/nmod_mat/test/t-rank \
+  src/nmod_mat/test/t-rowreduce_1_2 \
+  src/nmod_mat/test/t-solve \
+  src/nmod_mat/test/t-solve_mat \
+  src/nmod_mat/test/t-transpose

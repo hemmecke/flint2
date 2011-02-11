@@ -1,3 +1,4 @@
+include src/ulong_extras/test/Rules.am
 libflint_la_SOURCES += \
   src/ulong_extras/compute_primes.c \
   src/ulong_extras/divrem2_precomp.c \

@@ -1,0 +1,6 @@
+TESTSUITE_TESTS += ${nmod_vec_TESTS}
+nmod_vec_TESTS = \
+  src/nmod_vec/test/t-add_sub_neg \
+  src/nmod_vec/test/t-reduce \
+  src/nmod_vec/test/t-scalar_addmul_nmod \
+  src/nmod_vec/test/t-scalar_mul_nmod

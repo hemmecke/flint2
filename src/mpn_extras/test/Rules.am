@@ -1,0 +1,4 @@
+TESTSUITE_TESTS += ${mpn_extras_TESTS}
+mpn_extras_TESTS = \
+  src/mpn_extras/test/t-remove_2exp \
+  src/mpn_extras/test/t-remove_power

@@ -1,0 +1,3 @@
+TESTSUITE_TESTS += ${mpfr_vec_TESTS}
+mpfr_vec_TESTS = \
+  src/mpfr_vec/test/t-init_clear

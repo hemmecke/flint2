@@ -1,4 +1,8 @@
 # Include the subdirectories of the modules
+# The tests in each module are collected in separate variables
+# so that tests per module can be selected.
+# Variable name = dirname_TESTS and dirname_XFAIL_TESTS.
+
 include src/arith/Rules.am
 include src/fmpq_poly/Rules.am
 include src/fmpz/Rules.am

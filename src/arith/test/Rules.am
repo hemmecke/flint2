@@ -1,0 +1,13 @@
+TESTSUITE_TESTS += ${arith_TESTS}
+arith_TESTS = \
+  src/arith/test/t-bernoulli_poly \
+  src/arith/test/t-bernoulli_vec \
+  src/arith/test/t-divisors \
+  src/arith/test/t-divisor_sigma \
+  src/arith/test/t-euler_phi \
+  src/arith/test/t-factor \
+  src/arith/test/t-harmonic \
+  src/arith/test/t-moebius_mu \
+  src/arith/test/t-primorial \
+  src/arith/test/t-ramanujan_tau \
+  src/arith/test/t-stirling

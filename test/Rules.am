@@ -1,0 +1,11 @@
+TESTSUITE_TESTS += $(test_TESTS)
+test_TESTS = \
+  test/t-add_ssaaaa \
+  test/t-count_leading_zeros \
+  test/t-count_trailing_zeros \
+  test/t-sdiv_qrnnd \
+  test/t-smul_ppmm \
+  test/t-sub_ddmmss \
+  test/t-udiv_qrnnd \
+  test/t-udiv_qrnnd_preinv \
+  test/t-umul_ppmm

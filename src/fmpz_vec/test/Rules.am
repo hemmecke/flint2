@@ -1,0 +1,26 @@
+TESTSUITE_TESTS += ${fmpz_vec_TESTS}
+fmpz_vec_TESTS = \
+  src/fmpz_vec/test/t-add \
+  src/fmpz_vec/test/t-content \
+  src/fmpz_vec/test/t-init_clear \
+  src/fmpz_vec/test/t-is_zero \
+  src/fmpz_vec/test/t-max_bits \
+  src/fmpz_vec/test/t-max_limbs \
+  src/fmpz_vec/test/t-neg \
+  src/fmpz_vec/test/t-scalar_addmul_fmpz \
+  src/fmpz_vec/test/t-scalar_addmul_si_2exp \
+  src/fmpz_vec/test/t-scalar_addmul_si \
+  src/fmpz_vec/test/t-scalar_divexact_fmpz \
+  src/fmpz_vec/test/t-scalar_divexact_si \
+  src/fmpz_vec/test/t-scalar_divexact_ui \
+  src/fmpz_vec/test/t-scalar_mul_2exp \
+  src/fmpz_vec/test/t-scalar_mul_fmpz \
+  src/fmpz_vec/test/t-scalar_mul_si \
+  src/fmpz_vec/test/t-scalar_mul_ui \
+  src/fmpz_vec/test/t-scalar_submul_fmpz \
+  src/fmpz_vec/test/t-scalar_submul_si_2exp \
+  src/fmpz_vec/test/t-scalar_submul_si \
+  src/fmpz_vec/test/t-set_equal \
+  src/fmpz_vec/test/t-sub \
+  src/fmpz_vec/test/t-swap \
+  src/fmpz_vec/test/t-zero

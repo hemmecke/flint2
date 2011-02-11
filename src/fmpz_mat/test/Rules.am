@@ -1,0 +1,17 @@
+TESTSUITE_TESTS += ${fmpz_mat_TESTS}
+fmpz_mat_TESTS = \
+  src/fmpz_mat/test/t-det \
+  src/fmpz_mat/test/t-det_multi_mod \
+  src/fmpz_mat/test/t-entry \
+  src/fmpz_mat/test/t-equal \
+  src/fmpz_mat/test/t-init_clear \
+  src/fmpz_mat/test/t-inv \
+  src/fmpz_mat/test/t-max_bits \
+  src/fmpz_mat/test/t-mul \
+  src/fmpz_mat/test/t-mul_multi_mod \
+  src/fmpz_mat/test/t-rank \
+  src/fmpz_mat/test/t-rowreduce \
+  src/fmpz_mat/test/t-solve \
+  src/fmpz_mat/test/t-solve_mat \
+  src/fmpz_mat/test/t-transpose \
+  src/fmpz_mat/test/t-zero

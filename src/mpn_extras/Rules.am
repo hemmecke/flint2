@@ -1,3 +1,4 @@
+include src/mpn_extras/test/Rules.am
 libflint_la_SOURCES += \
   src/mpn_extras/debug.c \
   src/mpn_extras/factor_trial.c \

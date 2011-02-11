@@ -1,0 +1,3 @@
+TESTSUITE_TESTS += ${mpfr_mat_TESTS}
+mpfr_mat_TESTS = \
+  src/mpfr_mat/test/t-init_clear

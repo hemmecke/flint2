@@ -1,3 +1,4 @@
+include src/fmpq_poly/test/Rules.am
 libflint_la_SOURCES += \
   src/fmpq_poly/add.c \
   src/fmpq_poly/canonicalise.c \

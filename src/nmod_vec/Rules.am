@@ -1,3 +1,4 @@
+include src/nmod_vec/test/Rules.am
 libflint_la_SOURCES += \
   src/nmod_vec/add.c \
   src/nmod_vec/max_bits.c \

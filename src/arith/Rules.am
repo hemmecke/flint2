@@ -1,3 +1,4 @@
+include src/arith/test/Rules.am
 libflint_la_SOURCES += \
   src/arith/bernoulli_poly.c \
   src/arith/bernoulli_vec.c \

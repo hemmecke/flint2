@@ -1,3 +1,4 @@
+include src/fmpz/test/Rules.am
 libflint_la_SOURCES += \
   src/fmpz/abs.c \
   src/fmpz/abs_fits_ui.c \

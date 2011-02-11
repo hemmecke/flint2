@@ -1,3 +1,4 @@
+include src/fmpz_vec/test/Rules.am
 libflint_la_SOURCES += \
   src/fmpz_vec/add.c \
   src/fmpz_vec/clear.c \
