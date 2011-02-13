@@ -3,6 +3,8 @@
 # so that tests per module can be selected.
 # Variable name = dirname_TESTS and dirname_XFAIL_TESTS.
 
+include src/aux/Rules.am
+
 include src/arith/Rules.am
 include src/fmpq_poly/Rules.am
 include src/fmpz/Rules.am

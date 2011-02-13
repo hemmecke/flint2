@@ -1,0 +1,4 @@
+include src/aux/test/Rules.am
+libflint_la_SOURCES += \
+  src/aux/clz_tab.c \
+  src/aux/profiler.c

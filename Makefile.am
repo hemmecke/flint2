@@ -17,7 +17,6 @@ TESTSUITE_XFAIL_TESTS = ${test_XFAIL_TESTS} # more added through Rules.am
 
 # Include the rules from the sources subdirectories
 include src/Rules.am
-include test/Rules.am
 
 include_HEADERS  = # added via include/Rules.am
 include include/Rules.am
