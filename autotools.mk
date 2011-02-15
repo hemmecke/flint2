@@ -7,7 +7,11 @@
 # GNU General Public License version 3 or later.
 ###################################################################
 #
-# Usage: make -f autotools.mk
+# Usage:
+#   make -f autotools.mk
+#   make -f autotools.mk PREFIX=/path/to/install/dir
+#
+# If PREFIX is missing it is equivalent to PREFIX=`pwd`/autotools.
 #
 # Purpose: Install autotools locally into a newly created
 # subdirectory autotools/.
@@ -19,13 +23,24 @@
 #   PATH=`pwd`/autotools/bin:$PATH
 ###################################################################
 .PHONY: autotools all automake autoconf libtool
+
+# Specify the default installation directory.
+PREFIX=`pwd`/autotools
+
 autotools:
+	@if test "`echo \"${PREFIX}\" | sed -e 's,^/.*,/,'`" != "/"; then \
+	  echo "PREFIX must be an absolute path."; \
+	  exit 1; \
+	fi
 	-mkdir $@
 	cp autotools.mk $@/Makefile
-	cd $@ && ${MAKE} P="`pwd`" PATH="`pwd`/bin:${PATH}" install
+	cd $@ && ${MAKE} PREFIX=${PREFIX} PATH="${PREFIX}/bin:${PATH}" install
 	@echo
 	@echo =====================================================
-	@echo PATH=`pwd`/autotools/bin:\$$PATH
+	@echo
+	@echo Add the following to your shell configuration file:
+	@echo
+	@echo PATH=${PREFIX}/bin:\$$PATH
 	@echo export PATH
 	@echo
 
@@ -38,7 +53,7 @@ install:
 	cd download && ${MAKE} autoconf V=2.68
 	cd download && ${MAKE} automake V=1.11
 	cd download && ${MAKE} libtool  V=2.4
-	-rm -rf $@/download
+	-rm -rf download
 
 # The following targets are executed inside the directory
 # "autotools/download".
@@ -46,6 +61,6 @@ autoconf automake libtool:
 	-rm $@-$V.tar.gz
 	wget ftp://mirrors.kernel.org/gnu/$@/$@-$V.tar.gz
 	gunzip -c $@-$V.tar.gz | tar xf -
-	cd $@-$V && ./configure --prefix="$P"
+	cd $@-$V && ./configure --prefix="${PREFIX}"
 	cd $@-$V && make
 	cd $@-$V && make install
