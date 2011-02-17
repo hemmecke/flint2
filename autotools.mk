@@ -28,7 +28,7 @@
 PREFIX=`pwd`/autotools
 
 autotools:
-	@if test "`echo \"${PREFIX}\" | sed -e 's,^/.*,/,'`" != "/"; then \
+	@if test "$$(echo ${PREFIX} | sed -e 's,^/.*,/,')" != "/"; then \
 	  echo "PREFIX must be an absolute path."; \
 	  exit 1; \
 	fi
