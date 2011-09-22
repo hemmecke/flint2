@@ -12,3 +12,7 @@ done
 find . -name Makefile -delete
 rm Makefile.in
 rm configure
+
+# Move top-level code to src/aux.
+mkdir src/aux
+mv test *.c src/aux
