@@ -7,3 +7,6 @@ mkdir src
 for d in $(find . -maxdepth 1 -type d); do
     if test -f $d/Makefile; then mv $d src/$d; fi
 done
+
+# Remove Makefiles
+find . -name Makefile -delete
